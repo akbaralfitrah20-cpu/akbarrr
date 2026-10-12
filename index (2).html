@@ -1,0 +1,358 @@
+zz<!DOCTYPE html>
+<html lang="id" class="scroll-smooth">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portofolio Petualang & Web Developer</title>
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- FontAwesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;600;700;800&display=swap" rel="stylesheet">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    fontFamily: {
+                        sans: ['Plus Jakarta Sans', 'sans-serif'],
+                    },
+                    colors: {
+                        mountain: {
+                            900: '#0F172A',
+                            800: '#1E293B',
+                            700: '#334155',
+                            forest: '#14532D',
+                            accent: '#10B981',
+                            mist: '#E2E8F0'
+                        }
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        .hero-bg {
+            background: linear-gradient(to bottom, rgba(15, 23, 42, 0.75), rgba(15, 23, 42, 1)), 
+                        url('https://images.unsplash.com/photo-1464822759023-fed622ff2c3b?auto=format&fit=crop&w=1920&q=80') center/cover no-repeat;
+        }
+        .glass-card {
+            background: rgba(30, 41, 59, 0.7);
+            backdrop-filter: blur(12px);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+        }
+    </style>
+</head>
+<body class="bg-mountain-900 text-slate-100 font-sans antialiased selection:bg-mountain-accent selection:text-slate-900">
+
+    <!-- Header / Navigation -->
+    <header class="fixed top-0 left-0 right-0 z-50 glass-card border-b border-slate-800/50">
+        <div class="max-w-6xl mx-auto px-6 py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center gap-2 font-bold text-xl tracking-wider text-emerald-400">
+                <i class="fa-solid => fa-mountain"></i> SUMMIT.DEV
+            </a>
+            <nav class="hidden md:flex items-center gap-8 text-sm font-medium text-slate-300">
+                <a href="#tentang" class="hover:text-emerald-400 transition">Tentang</a>
+                <a href="#lagu" class="hover:text-emerald-400 transition">Soundtrack</a>
+                <a href="#proyek" class="hover:text-emerald-400 transition">Proyek</a>
+                <a href="#kontak" class="hover:text-emerald-400 transition">Kontak</a>
+            </nav>
+            <a href="#kontak" class="px-4 py-2 text-xs font-semibold bg-emerald-500 hover:bg-emerald-600 text-slate-950 rounded-full transition shadow-lg shadow-emerald-500/20">
+                Mulai Diskusi
+            </a>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section class="hero-bg min-h-screen flex items-center justify-center pt-24 pb-16 px-6 relative">
+        <div class="max-w-4xl mx-auto text-center z-10 space-y-6">
+            <div class="inline-flex items-center gap-2 px-4 py-2 rounded-full glass-card text-emerald-400 text-xs font-semibold tracking-wide uppercase">
+                <i class="fa-solid fa-compass animate-spin" style="animation-duration: 10s;"></i> Web Developer & Penggemar Alam
+            </div>
+            <h1 class="text-4xl md:text-6xl lg:text-7xl font-extrabold tracking-tight leading-tight">
+                Menjelajahi Kode, <br>
+                <span class="text-transparent bg-clip-text bg-gradient-to-r from-emerald-400 to-teal-200">
+                    Menaklukkan Puncak.
+                </span>
+            </h1>
+            <p class="text-slate-400 text-base md:text-lg max-w-2xl mx-auto leading-relaxed">
+                Selamat datang di portofolio digital saya. Seperti halnya mendaki gunung, membangun aplikasi web membutuhkan persiapan matang, ketahanan, dan fokus pada tujuan akhir.
+            </p>
+            <div class="pt-4 flex flex-col sm:flex-row items-center justify-center gap-4">
+                <a href="#proyek" class="w-full sm:w-auto px-8 py-3.5 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold rounded-xl transition shadow-lg shadow-emerald-500/25 flex items-center justify-center gap-2">
+                    Lihat Portofolio <i class="fa-solid fa-arrow-down text-sm"></i>
+                </a>
+                <a href="#lagu" class="w-full sm:w-auto px-8 py-3.5 glass-card hover:bg-slate-800 text-slate-200 font-semibold rounded-xl transition flex items-center justify-center gap-2">
+                    <i class="fa-solid fa-music text-emerald-400"></i> Lagu Favorit
+                </a>
+            </div>
+        </div>
+
+        <!-- SVG Mountain Bottom Divider -->
+        <div class="absolute bottom-0 left-0 right-0 overflow-hidden leading-none z-0 pointer-events-none">
+            <svg class="relative block w-full h-16 md:h-24 text-mountain-900" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M1200 0L0 0 0 120 1200 120z" fill="none"></path>
+                <path d="M0,0 C150,90 350,-40 500,60 C650,160 900,10 1200,40 L1200,120 L0,120 Z" fill="currentColor"></path>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Tentang Saya Section -->
+    <section id="tentang" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-12 items-center">
+            <div class="relative">
+                <div class="w-full h-96 rounded-2xl overflow-hidden shadow-2xl border border-slate-800">
+                    <img src="https://images.unsplash.com/photo-1519681393784-d120267933ba?auto=format&fit=crop&w=800&q=80" alt="" class="w-full h-full object-cover">
+                </div>
+                <div class="absolute -bottom-6 -right-6 glass-card p-4 rounded-xl border border-emerald-500/30 hidden sm:block">
+                    <div class="flex items-center gap-3">
+                        <div class="p-3 bg-emerald-500/20 text-emerald-400 rounded-lg">
+                            <i class="fa-solid fa-person-hiking text-2xl"></i>
+                        </div>
+                        <div>
+                            <p class="text-xs text-slate-400">Ketinggian Tertinggi</p>
+                            <p class="text-lg font-bold text-slate-100">3.676 mdpl</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="space-y-6">
+                <div class="inline-block px-3 py-1 bg-emerald-500/10 text-emerald-400 text-xs font-semibold rounded-md">
+                    FILOSOFI DIRI
+                </div>
+                <h2 class="text-3xl md:text-4xl font-bold">Setiap Garis Kode Adalah Jalur Pendakian</h2>
+                <p class="text-slate-400 leading-relaxed">
+                    Saya adalah seorang Full-Stack Developer yang menemukan ketenangan di puncak gunung dan semangat dalam memecahkan masalah pemrograman kompleks. 
+                </p>
+                <p class="text-slate-400 leading-relaxed">
+                    Alam mengajarkan saya ketekunan, perencanaan matang, dan pentingnya menikmati proses. Filosofi inilah yang saya terapkan dalam setiap proyek pembuatan perangkat lunak.
+                </p>
+
+                <!-- Skill Tags -->
+                <div class="pt-4">
+                    <h3 class="text-sm font-semibold text-slate-300 mb-3">Peralatan & Keahlian:</h3>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-lg border border-slate-700">HTML / CSS / JS</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-lg border border-slate-700">Tailwind CSS</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-lg border border-slate-700">React.js</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-lg border border-slate-700">Node.js</span>
+                        <span class="px-3 py-1 bg-slate-800 text-slate-300 text-xs rounded-lg border border-slate-700">Navigasi Darat</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Seksi Lagu: About You - The 1975 -->
+    <section id="lagu" class="py-20 px-6 bg-slate-950/60 border-y border-slate-800">
+        <div class="max-w-4xl mx-auto">
+            <div class="text-center space-y-3 mb-12">
+                <span class="text-xs font-semibold text-emerald-400 tracking-widest uppercase">Soundtrack Perjalanan</span>
+                <h2 class="text-3xl md:text-4xl font-bold">Musik di Perjalanan Pendakian</h2>
+                <p class="text-slate-400 text-sm max-w-xl mx-auto">
+                    Mendengarkan musik saat beristirahat di tenda atau menikmati senja di gunung selalu memberikan kedamaian tersendiri.
+                </p>
+            </div>
+
+            <!-- Music Player Card -->
+            <div class="glass-card rounded-2xl p-6 md:p-8 border border-slate-700/50 shadow-2xl relative overflow-hidden">
+                <div class="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
+                    
+                    <!-- Cover Art -->
+                    <div class="relative group mx-auto md:mx-0 w-48 h-48 md:w-full md:h-56 rounded-xl overflow-hidden shadow-lg border border-slate-700">
+                        <img src="https://images.unsplash.com/photo-1511671782779-c97d3d27a1d4?auto=format&fit=crop&w=600&q=80" alt="" class="w-full h-full object-cover">
+                        <div class="absolute inset-0 bg-slate-950/40 flex items-center justify-center opacity-0 group-hover:opacity-100 transition duration-300">
+                            <i class="fa-solid fa-compact-disc text-4xl text-emerald-400 animate-spin" style="animation-duration: 4s;"></i>
+                        </div>
+                    </div>
+
+                    <!-- Details & Player -->
+                    <div class="md:col-span-2 space-y-4">
+                        <div>
+                            <div class="flex items-center justify-between">
+                                <span class="text-xs text-emerald-400 font-semibold uppercase tracking-wider">Lagu Unggulan</span>
+                                <span class="text-xs text-slate-500">Being Funny in a Foreign Language</span>
+                            </div>
+                            <h3 class="text-2xl font-bold text-slate-100">About You</h3>
+                            <p class="text-slate-400 font-medium">The 1975</p>
+                        </div>
+
+                        <!-- Ringkasan Makna Lagu -->
+                        <div class="p-4 bg-slate-900/80 rounded-xl border border-slate-800 text-xs text-slate-300 leading-relaxed">
+                            <p class="font-semibold text-emerald-400 mb-1"><i class="fa-solid fa-circle-info mr-1"></i> Tentang Lagu Ini:</p>
+                            Lagu ini membawa nuansa nostalgia dan rindu yang mendalam. Dengan alunan musik <em>dream-pop / indie rock</em> yang atmosferik, "About You" mengisahkan tentang memori seseorang dari masa lalu yang tetap melekat secara samar namun kuat dalam ingatan, sangat pas menemani momen reflektif di alam bebas.
+                        </div>
+
+                        <!-- Kutipan Lirik (Maksimal 4 Baris) -->
+                        <blockquote class="italic text-xs md:text-sm text-slate-300 border-l-2 border-emerald-400 pl-3 py-1 my-2">
+                            "Do you think I have forgotten?<br>
+                            Do you think I have forgotten?<br>
+                            Do you think I have forgotten<br>
+                            About you?"
+                        </blockquote>
+
+                        <!-- Simulation Audio Player Control UI -->
+                        <div class="pt-2 space-y-2">
+                            <div class="flex items-center justify-between text-xs text-slate-400">
+                                <span id="current-time">0:00</span>
+                                <div class="w-full mx-3 bg-slate-800 h-1.5 rounded-full overflow-hidden">
+                                    <div id="progress-bar" class="bg-emerald-400 h-full w-0 transition-all duration-300"></div>
+                                </div>
+                                <span>5:26</span>
+                            </div>
+                            <div class="flex items-center justify-between pt-2">
+                                <a href="https://www.google.com/search?q=The+1975+About+You+lyrics" target="_blank" rel="noopener noreferrer" class="text-xs text-slate-400 hover:text-emerald-400 flex items-center gap-1 transition">
+                                    <i class="fa-solid fa-magnifying-glass"></i> Cari Lirik Lengkap di Google
+                                </a>
+                                <div class="flex items-center gap-4">
+                                    <button id="play-btn" onclick="toggleAudioDemo()" class="w-10 h-10 rounded-full bg-emerald-500 hover:bg-emerald-600 text-slate-950 flex items-center justify-center transition shadow-lg shadow-emerald-500/20">
+                                        <i id="play-icon" class="fa-solid fa-play ml-0.5"></i>
+                                    </button>
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Proyek Section -->
+    <section id="proyek" class="py-20 px-6 max-w-6xl mx-auto">
+        <div class="text-center space-y-3 mb-12">
+            <span class="text-xs font-semibold text-emerald-400 tracking-widest uppercase">Karya & Eksplorasi</span>
+            <h2 class="text-3xl md:text-4xl font-bold">Proyek Teratas</h2>
+        </div>
+
+        <div class="grid grid-cols-1 md:grid-cols-3 gap-6">
+            <!-- Project Card 1 -->
+            <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 transition duration-300 flex flex-col">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1454496522488-7a8e488e8606?auto=format&fit=crop&w=600&q=80" alt="" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-100">PeakExplorer App</h3>
+                        <p class="text-xs text-slate-400 mt-2">Aplikasi navigasi dan panduan jalur pendakian gunung berbasis peta interaktif.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-xs">
+                        <span class="text-emerald-400 font-semibold">React, Mapbox</span>
+                        <a href="#" class="text-slate-300 hover:text-emerald-400"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 2 -->
+            <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 transition duration-300 flex flex-col">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1507525428034-b723cf961d3e?auto=format&fit=crop&w=600&q=80" alt="" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-100">WeatherPeak API</h3>
+                        <p class="text-xs text-slate-400 mt-2">Sistem prakiraan cuaca real-time khusus area pegunungan tinggi.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-xs">
+                        <span class="text-emerald-400 font-semibold">Node.js, OpenWeather</span>
+                        <a href="#" class="text-slate-300 hover:text-emerald-400"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Project Card 3 -->
+            <div class="glass-card rounded-2xl overflow-hidden border border-slate-800 hover:border-emerald-500/50 transition duration-300 flex flex-col">
+                <div class="h-48 overflow-hidden">
+                    <img src="https://images.unsplash.com/photo-1486870591958-9b9d0d1dda99?auto=format&fit=crop&w=600&q=80" alt="" class="w-full h-full object-cover hover:scale-105 transition duration-500">
+                </div>
+                <div class="p-6 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                        <h3 class="text-lg font-bold text-slate-100">OutdoorGear Store</h3>
+                        <p class="text-xs text-slate-400 mt-2">Platform e-commerce penyewaan dan penjualan perlengkapan pendakian.</p>
+                    </div>
+                    <div class="flex items-center justify-between text-xs">
+                        <span class="text-emerald-400 font-semibold">Tailwind, JS Vanilla</span>
+                        <a href="#" class="text-slate-300 hover:text-emerald-400"><i class="fa-solid fa-arrow-up-right-from-square"></i> Demo</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Kontak Section -->
+    <section id="kontak" class="py-20 px-6 bg-slate-950 border-t border-slate-800">
+        <div class="max-w-3xl mx-auto glass-card rounded-3xl p-8 md:p-12 border border-slate-800 text-center space-y-6">
+            <i class="fa-solid fa-campground text-4xl text-emerald-400"></i>
+            <h2 class="text-3xl font-bold">Mari Berdiskusi atau Mendaki Bersama</h2>
+            <p class="text-slate-400 text-sm max-w-lg mx-auto">
+                Punya ide proyek menarik atau sekadar ingin berbincang tentang musik dan petualangan? Pintu selalu terbuka.
+            </p>
+            
+            <form onsubmit="event.preventDefault(); alert('Pesan Anda berhasil dikirim!');" class="space-y-4 text-left pt-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                    <input type="text" placeholder="Nama Anda" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 text-sm focus:outline-none focus:border-emerald-400">
+                    <input type="email" placeholder="Email Anda" required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 text-sm focus:outline-none focus:border-emerald-400">
+                </div>
+                <textarea rows="4" placeholder="Pesan Anda..." required class="w-full px-4 py-3 rounded-xl bg-slate-900 border border-slate-700 text-slate-200 text-sm focus:outline-none focus:border-emerald-400"></textarea>
+                <button type="submit" class="w-full py-3.5 bg-emerald-500 hover:bg-emerald-600 text-slate-950 font-bold rounded-xl transition shadow-lg shadow-emerald-500/20">
+                    Kirim Pesan <i class="fa-solid fa-paper-plane ml-1"></i>
+                </button>
+            </form>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="py-8 text-center text-xs text-slate-500 border-t border-slate-900">
+        <p>&copy; 2026 Summit Dev. Didesain dengan tema alam & petualangan.</p>
+    </footer>
+
+    <!-- Interactive Script -->
+    <script>
+        let isPlaying = false;
+        let progressInterval;
+
+        function toggleAudioDemo() {
+            const playIcon = document.getElementById('play-icon');
+            const progressBar = document.getElementById('progress-bar');
+            const currentTimeEl = document.getElementById('current-time');
+            
+            isPlaying = !isPlaying;
+
+            if (isPlaying) {
+                playIcon.classList.remove('fa-play');
+                playIcon.classList.add('fa-pause');
+                
+                let progress = 0;
+                let seconds = 0;
+                
+                progressInterval = setInterval(() => {
+                    progress += 0.5;
+                    seconds += 1;
+                    
+                    if (progress > 100) {
+                        progress = 0;
+                        seconds = 0;
+                        isPlaying = false;
+                        playIcon.classList.remove('fa-pause');
+                        playIcon.classList.add('fa-play');
+                        clearInterval(progressInterval);
+                    }
+
+                    progressBar.style.width = progress + '%';
+                    
+                    // Format time
+                    const mins = Math.floor(seconds / 60);
+                    const secs = seconds % 60;
+                    currentTimeEl.textContent = `${mins}:${secs < 10 ? '0' : ''}${secs}`;
+                }, 1000);
+
+            } else {
+                playIcon.classList.remove('fa-pause');
+                playIcon.classList.add('fa-play');
+                clearInterval(progressInterval);
+            }
+        }
+    </script>
+</body>
+</html>
